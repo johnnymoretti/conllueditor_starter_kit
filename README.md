@@ -69,7 +69,9 @@ windows
 java -jar ./target/ConlluEditor-2.28.0-jar-with-dependencies.jar --validator conf/validatorWin.conf --UPOS conf/cpos.ud --deprels conf/deprels.json --features conf/feats.json --language la  --rootdir  ./gui ./works/trainingTreebank_set1_practice 8888
 ```
 
-## Create an sh launcher files
+## Create an sh launcher files 
+_mac and linux only_
+
 with your text editor create a file with this content:
 ```
 !#/bin/bash
