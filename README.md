@@ -68,3 +68,27 @@ windows
 ``` 
 java -jar ./target/ConlluEditor-2.28.0-jar-with-dependencies.jar --validator conf/validatorWin.conf --UPOS conf/cpos.ud --deprels conf/deprels.json --features conf/feats.json --language la  --rootdir  ./gui ./works/trainingTreebank_set1_practice 8888
 ```
+
+## Create an sh launcher files
+with your text editor create a file with this content:
+```
+!#/bin/bash
+
+java -jar ./target/ConlluEditor-2.28.0-jar-with-dependencies.jar --validator conf/validator.conf --UPOS conf/cpos.ud --deprels conf/deprels.json --features conf/feats.json --language la  --rootdir  ./gui $1 8888
+```
+save it in the conllueditor folder as ```run.sh```
+
+in the terminal give the exec permission to the script with
+```
+chmod a+x run.sh
+```
+run the script with:
+```
+./run.sh work/<file_to_be_annotate>
+```
+or
+```
+sudo ./run.sh work/<file_to_be_annotate>
+```
+
+
