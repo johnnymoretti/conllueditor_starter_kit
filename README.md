@@ -45,6 +45,8 @@ mkdir works
 
 copy the conllu files into working directory.
 
+and
+
 initialize git in working directory 
 
 ```
