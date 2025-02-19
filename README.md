@@ -84,11 +84,11 @@ chmod a+x run.sh
 ```
 run the script with:
 ```
-./run.sh work/<file_to_be_annotate>
+./run.sh works/<file_to_be_annotate>
 ```
 or
 ```
-sudo ./run.sh work/<file_to_be_annotate>
+sudo ./run.sh works/<file_to_be_annotate>
 ```
 
 
