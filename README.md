@@ -58,7 +58,7 @@ git add .
  
  
 
-Run from your conllu editor folder with:
+Run from your conllu editor folder with _(change language according to the language of your file)_:
 
 ```
 java -jar ./target/ConlluEditor-2.29.2-jar-with-dependencies.jar --validator conf/validator.conf --UPOS tools/data/cpos.ud --deprels tools/data/deprels.json --features tools/data/feats.json --language la  --rootdir  ./gui ./works/<file_to_be_annotate> 8888
@@ -77,7 +77,7 @@ with your text editor create a file with this content:
 ```
 !#/bin/bash
 
-java -jar ./target/ConlluEditor-2.29.2-jar-with-dependencies.jar --validator conf/validator.conf --UPOS tools/data/cpos.ud --deprels tools/data/deprels.json --features tools/data/feats.json --language la  --rootdir  ./gui $1 8888
+java -jar ./target/ConlluEditor-2.29.2-jar-with-dependencies.jar --validator conf/validator.conf --UPOS tools/data/cpos.ud --deprels tools/data/deprels.json --features tools/data/feats.json --language %1  --rootdir  ./gui $2 8888
 ```
 
 save it in the conllueditor folder as ```run.sh```
@@ -88,14 +88,19 @@ chmod a+x run.sh
 ```
 run the script with:
 ```
-./run.sh works/<file_to_be_annotate>
+./run.sh <iso code of the language> works/<file_to_be_annotate>
 ```
 or
 ```
-sudo ./run.sh works/<file_to_be_annotate>
+sudo ./run.sh <iso code of the language> works/<file_to_be_annotate>
+```
+example:
+```
+./run.sh la works/myConlluFileInTheWorksDirectory.conllu
 ```
 
-> $${\color{red}Note:}$$ All the examples are basesd on the conllueditor 2.28.0 version. if you use a different version please change `2.28.0` in all the commands above with the correct verison that you use.
+
+> $${\color{red}Note:}$$ All the examples are based on the conllueditor 2.28.0 version. if you use a different version please change `2.28.0` in all the commands above with the correct verison that you use.
 
 
 
