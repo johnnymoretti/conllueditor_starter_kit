@@ -91,7 +91,7 @@ or
 sudo ./run.sh works/<file_to_be_annotate>
 ```
 
-> Note: All the examples are basesd on the conllueditor 2.28.0 version. if you use a different version please change $${\color{red}2.28.0`}$$ in all the commands above with the correct verison the you use.
+> $${\color{red}Note:}$$ All the examples are basesd on the conllueditor 2.28.0 version. if you use a different version please change $${\color{red}2.28.0}$$ in all the commands above with the correct verison the you use.
 
 
 
