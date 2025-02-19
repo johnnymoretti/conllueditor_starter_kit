@@ -43,7 +43,7 @@ create a working directory into conllu editor folder i.e. ```works```
 mkdir works
 ```
 
-copy the conllu files into working directory i.e. ```trainingTreebank_set1_gold``` and ```trainingTreebank_set1_practice```
+copy the conllu files into working directory.
 
 initialize git in working directory 
 
