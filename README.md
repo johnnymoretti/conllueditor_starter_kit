@@ -77,7 +77,7 @@ with your text editor create a file with this content:
 ```
 !#/bin/bash
 
-java -jar ./target/ConlluEditor-2.29.2-jar-with-dependencies.jar --validator conf/validator.conf --UPOS tools/data/cpos.ud --deprels tools/data/deprels.json --features tools/data/feats.json --language %1  --rootdir  ./gui $2 8888
+java -jar ./target/ConlluEditor-2.29.2-jar-with-dependencies.jar --validator conf/validator.conf --UPOS tools/data/cpos.ud --deprels tools/data/deprels.json --features tools/data/feats.json --language $1  --rootdir  ./gui $2 8888
 ```
 
 save it in the conllueditor folder as ```run.sh```
