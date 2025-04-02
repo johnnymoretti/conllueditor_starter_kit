@@ -20,13 +20,9 @@ in windows setup env variables and run ```pip install regex```
 Download conllu editor
  - [Releases](https://github.com/Orange-OpenSource/conllueditor/releases) 
 
-or
-
- - [ConlluEditor 2.28](https://github.com/Orange-OpenSource/conllueditor/releases/download/V2.28.0/conllueditor-2.28.0.zip)
-
 Unzip conllueditor
 
-go in the conllueditor folder 
+go in the conllueditor folder (this example is related to version 2.28, please adapt your example to the latest version) 
 ``` 
 cd conllueditor-2.28.0
 ```
